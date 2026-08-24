@@ -13,8 +13,31 @@
         .card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 25px; margin-bottom: 30px; }
         .card h2 { margin-top: 0; color: #f1f5f9; font-size: 1.5rem; }
         .tag { display: inline-block; background: #0f172a; border: 1px solid #0284c7; color: #38bdf8; padding: 3px 10px; border-radius: 6px; font-size: 0.85rem; margin: 0 5px 10px 0; font-weight: 600; }
+        .tag-wip { border-color: #f59e0b; color: #fbbf24; }
+        
+        /* Grid Gallery with Uncropped Images */
         .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; }
-        .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid #334155; }
+        .gallery img { 
+            width: 100%; 
+            height: 220px; 
+            object-fit: contain; 
+            background-color: #0f172a; 
+            border-radius: 8px; 
+            border: 1px solid #334155; 
+        }
+
+        /* Aspect ratio container for single images */
+        .single-img-container img {
+            width: 100%;
+            height: auto;
+            max-height: 420px;
+            object-fit: contain;
+            background-color: #0f172a;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            margin-top: 20px;
+        }
+
         ul { color: #cbd5e1; padding-left: 20px; }
         li { margin-bottom: 8px; }
     </style>
@@ -29,9 +52,9 @@
             </p>
         </header>
 
-        <!-- Formula 1 RC Vehicle -->
+        <!-- Formula 1 RC Vehicle v1.0 -->
         <div class="card">
-            <h2>Formula 1 RC Vehicle</h2>
+            <h2>Formula 1 RC Vehicle (v1.0)</h2>
             <div>
                 <span class="tag">SolidWorks CAD</span>
                 <span class="tag">CFD Flow Simulation</span>
@@ -53,6 +76,22 @@
                 <img src="cfd_isolines.png" alt="CFD Flow Trajectories and Isolines">
                 <img src="cfd_wing_pressure.png" alt="CFD Wing Pressure Plot">
             </div>
+        </div>
+
+        <!-- Formula 1 RC Vehicle v2.0 (In Development) -->
+        <div class="card">
+            <h2>Formula 1 RC Vehicle (v2.0 Architecture - In Development)</h2>
+            <div>
+                <span class="tag tag-wip">In Progress</span>
+                <span class="tag">Underbody Aerodynamics</span>
+                <span class="tag">Venturi Tunnels</span>
+                <span class="tag">Drivetrain & Powertrain</span>
+            </div>
+            <ul>
+                <li>Developing a second-generation 1:10 scale chassis focusing on advanced ground-effect aerodynamics and integrated drivetrain packaging.</li>
+                <li>Engineered a full underbody floor incorporating dual Venturi tunnels and sculpted sidepod aero-shells in SolidWorks (90% CAD complete).</li>
+                <li>Designing an updated powertrain architecture and rear differential setup to improve power delivery and high-speed cornering stability.</li>
+            </ul>
         </div>
 
         <!-- Jansen Linkage Horse Model -->
@@ -87,7 +126,7 @@
                 <li>Designed and configured a fluid-filled syringe system for joint rotation, actuation, and clamping.</li>
                 <li>Calculated required hydraulic force outputs and lever arm mechanical advantage to ensure smooth joint movement without system leakage or compliance.</li>
             </ul>
-            <div class="gallery">
+            <div class="single-img-container">
                 <img src="hydraulic_arm.png" alt="Hydraulic Arm Prototype">
             </div>
         </div>
