@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawton Phan | Engineering Portfolio</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #f8fafc; margin: 0; padding: 40px 20px; line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { border-bottom: 2px solid #0284c7; padding-bottom: 20px; margin-bottom: 40px; }
+        h1 { margin: 0; font-size: 2.5rem; color: #f8fafc; }
+        .subtitle { color: #38bdf8; font-size: 1.2rem; font-weight: 600; margin-top: 5px; }
+        .card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 25px; margin-bottom: 30px; }
+        .card h2 { margin-top: 0; color: #f1f5f9; font-size: 1.5rem; }
+        .tag { display: inline-block; background: #0f172a; border: 1px solid #0284c7; color: #38bdf8; padding: 3px 10px; border-radius: 6px; font-size: 0.85rem; margin: 0 5px 10px 0; font-weight: 600; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; }
+        .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid #334155; }
+        ul { color: #cbd5e1; padding-left: 20px; }
+        li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LAWTON PHAN</h1>
+            <div class="subtitle">Mechanical Engineering Honors Student | Texas A&M University</div>
+            <p style="color: #94a3b8; margin-top: 10px;">
+                Email: lawtonphan@gmail.com | Phone: (469) 345-0217 | LinkedIn: linkedin.com/in/lawtonphan
+            </p>
+        </header>
+
+        <!-- F1 RC Car -->
+        <div class="card">
+            <h2>1:10 Scale Formula 1 RC Vehicle (V1.0 & V2.0)</h2>
+            <div>
+                <span class="tag">SolidWorks CAD</span>
+                <span class="tag">CFD Flow Simulation</span>
+                <span class="tag">3D Printing (PETG-CF/GF)</span>
+                <span class="tag">Kinematics & Aero</span>
+            </div>
+            <ul>
+                <li>Designed complete chassis, bodywork, halo, and wing assemblies in SolidWorks using parametric surfacing lofts.</li>
+                <li>Ran CFD simulations to optimize surface pressure contours and drag/downforce balance across wing profiles.</li>
+                <li>3D printed structural parts in high-strength carbon/glass-fiber PETG composites; integrated motor electronics and steering servos.</li>
+                <li>Currently re-engineering V2.0 featuring an underbody ground-effect floor, pushrod rear suspension, and differential drivetrain.</li>
+            </ul>
+            <div class="gallery">
+                <!-- Replace src with your uploaded image filenames -->
+                <img src="f1_car_real.jpg" alt="F1 RC Car Physical Build">
+                <img src="f1_cad_model.png" alt="SolidWorks CAD Model">
+                <img src="f1_cfd_plot.png" alt="CFD Flow Simulation">
+            </div>
+        </div>
+
+        <!-- Jansen Linkage -->
+        <div class="card">
+            <h2>Jansen Linkage Walking Mechanism</h2>
+            <div>
+                <span class="tag">SolidWorks Assembly</span>
+                <span class="tag">Mechanism Kinematics</span>
+                <span class="tag">Rapid Prototyping</span>
+            </div>
+            <ul>
+                <li>Modeled a 12-bar walking mechanism with dynamic assembly mates to simulate leg motion paths.</li>
+                <li>3D printed and physically assembled linkages to validate mechanical tolerances against CAD motion studies.</li>
+            </ul>
+            <div class="gallery">
+                <img src="jansen_horse.jpg" alt="Jansen Linkage Model">
+            </div>
+        </div>
+
+        <!-- Hydraulic Arm -->
+        <div class="card">
+            <h2>Hydraulic Robotic Arm Prototype</h2>
+            <div>
+                <span class="tag">Fluid Actuation</span>
+                <span class="tag">Physical Prototyping</span>
+                <span class="tag">Joint Alignment</span>
+            </div>
+            <ul>
+                <li>Fabricated a physical prototype using fluid-filled syringes for joint rotation, actuation, and clamping.</li>
+                <li>Resolved joint tolerances and pivot alignment through iterative hands-on assembly.</li>
+            </ul>
+            <div class="gallery">
+                <img src="hydraulic_arm.jpg" alt="Hydraulic Arm Build">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
